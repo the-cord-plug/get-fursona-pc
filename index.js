@@ -3,7 +3,7 @@ const { get } = require("powercord/http");
 module.exports = class GetFursona extends Plugin {
   startPlugin() {
     powercord.api.commands.registerCommand({
-      name: "fursona",
+      command: "fursona",
       description: "Get a Fursona",
       usage: "{c}fursona < random | code (number 1-99999) >",
       execute: (args) => {
