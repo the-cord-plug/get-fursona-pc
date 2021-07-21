@@ -11,6 +11,9 @@ module.exports = class GetFursona extends Plugin {
       usage: "{c}fursona < random | code (number 1-99999) >",
       executor: (args) => {
         let uri;
+        if (args.length === 0) {
+            args[0] = "random";
+        }
         switch (args[0].strip()) {
           case "random":
           case "":
