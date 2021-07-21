@@ -6,7 +6,7 @@ module.exports = class GetFursona extends Plugin {
       command: "fursona",
       description: "Get a Fursona",
       usage: "{c}fursona < random | code (number 1-99999) >",
-      execute: (args) => {
+      executor: (args) => {
         switch (args[0]) {
           case "random":
             return {
