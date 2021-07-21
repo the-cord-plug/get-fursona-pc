@@ -40,7 +40,9 @@ module.exports = class GetFursona extends Plugin {
               height: 1024,
           },
           }
+          
       );
+      return recieveMessage(m.channel_id, m);
   }
 
   pluginWillUnload() {
