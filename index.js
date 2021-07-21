@@ -26,7 +26,7 @@ module.exports = class GetFursona extends Plugin {
           case "code":
              uri =
               "https://thisfursonadoesnotexist.com/v2/jpgs-2x/seed" +
-              args[1] +
+              String(args[1]) +
               ".jpg";
               this.sendBotMessage(uri);
             break;
