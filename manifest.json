@@ -1,7 +1,7 @@
 {
-    "name": "Template",
+    "name": "Fursona Generator",
     "version": "1.0.0",
-    "description": "PC Plugin Template",
-    "author": "y/n",
-    "license": "DBAD"
+    "description": "Generates a fursona by getting one from \"ThisFursonaDoesNotExist\"\nWritten with the help of Github Copilot",
+    "author": "Jai L (jai#0001)",
+    "license": "DBAD w/ no liability"
 }
