@@ -10,16 +10,17 @@ module.exports = class GetFursona extends Plugin {
       description: "Get a Fursona",
       usage: "{c}fursona < random | code (number 1-99999) >",
       executor: (args) => {
+        let uri;
         switch (args[0]) {
           case "random":
           case "":
-            let uri =
+             uri =
               "https://thisfursonadoesnotexist.com/v2/jpgs-2x/seed" +
               String(Math.random()).substring(2, 7) +
               ".jpg";
             break;
           case "code":
-            let uri =
+             uri =
               "https://thisfursonadoesnotexist.com/v2/jpgs-2x/seed" +
               args[1] +
               ".jpg";
