@@ -14,7 +14,7 @@ module.exports = class GetFursona extends Plugin {
         if (args.length === 0) {
             args[0] = "random";
         }
-        switch (args[0].strip()) {
+        switch (args[0].trim()) {
           case "random":
           case "":
              uri =
